@@ -1,0 +1,610 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --intro : hsl(217, 28%, 15%);
+    --main  :hsl(218, 28%, 13%);
+    --footer :hsl(216, 53%, 9%);
+    --testimonials: hsl(219, 30%, 18%);
+    --Cyan: hsl(176, 68%, 64%);
+    --Blue: hsl(198, 60%, 50%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html,body{
+    font-size:14px;
+    color:var(--White);
+    font-family: 'open sans',sans-serif;
+}
+
+.one{
+    height:85rem;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--intro);
+    position: relative;
+    z-index:2;
+    overflow:hidden;
+    background-image:url(images/bg-curvy-desktop.svg);
+    background-repeat:no-repeat;
+    background-position:bottom;
+    
+}
+
+.bg{
+    display:none;
+}
+
+nav{
+    display: flex;
+    width:90%;
+    height:190px;
+    margin:auto;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.parent-items{
+    width:20%;
+    display:flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style:none;
+}
+
+a{
+    color:var(--White);
+    text-decoration: none;
+    opacity:.8;
+}
+
+.main-one{
+    width:90%;
+    margin:auto;
+    text-align:center;
+}
+
+.intro{
+    width:55%;
+    margin:auto;
+}
+
+.intro img{
+    width:100%;
+}
+
+.main-one .intro h1{
+    margin:2.14rem auto 3.57rem;
+    font-size:2.5rem;
+    line-height:3.5rem;
+}
+
+.main-one .intro p{
+    width: 80%;
+    margin: 0 auto 2.14rem;
+    font-size:1.24rem;
+    line-height:1.7rem;
+}
+
+.main-one .intro button{
+    padding: 1rem 6.42rem;
+    color: var(--White);
+    background: linear-gradient(to right,var(--Cyan),var(--Blue));
+    font-weight: 700;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+}
+
+.two{
+    background-color: var(--main);
+    border:none;
+    position: relative;
+}
+
+.two .section-one{
+    height:45rem;
+}
+
+.two .main-two{
+    display:grid;
+    width:70%;
+    margin:auto;
+    text-align:center;
+    grid-template-areas: "acces security"
+                         "collab file";
+    justify-items:center;
+    row-gap: 80px;                  
+}
+
+.two .main-two .acces{
+    grid-area: acces;
+}
+
+.two .main-two .security{
+    grid-area: security;
+}
+
+.two .main-two .collab{
+    grid-area: collab;
+}
+
+.two .main-two .file{
+    grid-area: file;
+}
+
+.acces,.file{
+    width: 22.85rem;
+}
+
+.security,.collab{
+    width: 25rem;
+}
+
+
+.content .icon{
+    width:90px;
+    height:90px;
+    margin: 0 auto 2.14rem;
+}
+
+.content .title{
+    font-size:1.2rem;
+    margin-bottom: 0.71rem;
+}
+
+.content .caption{
+    font-size:0.9rem;
+    opacity:.8;
+}
+
+.section-two{
+    height:43rem;
+}
+
+.main-three{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.main-three .productive img{
+    width: 100%;
+}
+
+.main-three .productive{
+    width:50%;
+}
+
+.main-three .content-productive{
+    width: 36rem;
+}
+
+.main-three .content-productive .title{
+    width: 75%;
+    font-size: 2.2rem;
+    margin-bottom: 2.14rem;
+}
+
+.main-three .content-productive p{
+    opacity: .8;
+}
+
+.main-three .content-productive .caption-one{
+    margin-bottom: 1.42rem;
+    font-size: 1.1rem;
+}
+
+.main-three .content-productive .caption-two{
+    margin-bottom: 2.14rem;
+    font-size: 1.1rem;
+}
+
+.main-three .content-productive .link{
+    display: inline;
+    font-size: 1.1rem;
+    padding-bottom: 0.71rem;
+    border-bottom: 1px solid var(--Cyan);
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.section-three{
+    height: 40rem;
+}
+
+.main-four{
+    position: relative;
+    display: grid;
+    width: 82%;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    column-gap: 35px;
+}
+
+.main-four .quotes{
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    z-index: 1;
+}
+
+.main-four .card{
+    padding:40px 25px 25px;
+    background-color: hsl(218, 26%, 18%);
+    border-radius: 3px;
+    box-shadow: 5px 5px 4px 5px var(--intro);
+    z-index: 2;
+}
+
+.main-four .card .profile{
+    display: flex;
+    align-items: center;
+}
+
+.card .profile .name{
+    width : 6.07rem;
+    font-size: .8rem;
+    margin-bottom: 5px;
+}
+.card .person{
+    margin-left: 10px;
+}
+
+.card .person .founder {
+    font-size: .6rem;
+    opacity: .8;
+}
+
+.main-four .card .caption{
+    width: 21rem;
+    font-size: 0.96rem;
+    margin-bottom: 1.42rem;
+    color: hsla(0, 0%, 100%,90%);
+    line-height:1.3rem;
+    letter-spacing: .1px;
+}
+
+.card .caption,.name span{
+    opacity: .8;
+}
+
+.card .profile .photo img{
+    width: 100%;
+}
+.card .profile .photo{
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.main-five{
+    position:absolute;
+    bottom: -8%;
+    left: 50%;
+    width: 61.42rem;
+    padding: 2.85rem 5rem;
+    text-align: center;
+    background-color: hsl(218, 26%, 18%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    transform:translateX(-50%);
+}
+
+.main-five .tittle{
+    margin-bottom: 2.14rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-five .caption{
+    width: 87%;
+    margin: 0 auto 2.85rem;
+    opacity: .8;
+}
+
+.main-five .email{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-five .email input{
+    width: 33.57rem;
+    height: 3.57rem;
+    padding: 1.42rem 2.85rem;
+    border-radius: 50px;
+    border: none;
+}
+
+.main-five .email button{
+    height: 3.57rem;
+    padding: 0 2.85rem;
+    border-radius: 50px;
+    border: none;
+    color: var(--White);
+    background: linear-gradient(to right,var(--Cyan),var(--Blue));
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.three{
+    background-color: var(--footer);
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+
+.three .footer{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 3fr 2fr 1fr 1fr 1.3fr;
+    grid-template-rows: 1fr 1.5fr;
+}
+
+.footer .icon{
+    width:18px;
+    height:18px;
+}
+
+.footer .location,.telp,.email{
+    display: flex;
+    margin-bottom:20px;
+}
+
+.three .footer .location{
+    width: 80%;
+    grid-area: 2/1/3/2;
+}
+
+.three .footer p{
+    margin-left: 30px;
+}
+
+.three .footer .contact{
+    display:flex;
+    flex-direction: column;
+    grid-area: 2/2/3/3;
+}
+
+.three .footer .link-one{
+    display:flex;
+    flex-direction: column;
+    grid-area: 2/3/3/4;
+    justify-self: end;
+}
+
+.footer li{
+    margin-bottom:20px;
+}
+
+.three .footer .link-two{
+    display:flex;
+    flex-direction: column;
+    grid-area: 2/4/3/5;
+    justify-self: end;
+}
+
+.footer .parent-icons{
+    width:8rem;
+    display:flex;
+    justify-content:space-between;
+    grid-area: 2/5/3/6;
+    justify-self: end;
+}
+
+.footer .parent-icons .icons{
+    list-style: none;
+    width: 30px;
+    height:30px;
+    border:1px solid white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+}
+
+.footer .parent-icons .icons:hover{
+    background-color: white;
+    color: var(--footer);
+}
+
+
+/* Responsive Breakpoint */
+
+@media screen and (max-width:500px){
+    nav{  
+        width:85%;
+        height:100px;
+        font-size: .9rem;
+    }
+    .one{
+        height: 55rem;
+        background-image:none;
+    }
+    
+    .curve{
+        position:absolute;
+        top:-140px;
+    }
+
+    .bg{
+        display:inherit;
+        width:100%;
+        height:45%;
+        background-color: var(--main);
+        position: absolute;
+        bottom:0;
+        z-index:-1;
+    }
+
+    .parent-items{
+        width:50%;
+    }
+
+    .one .logo img{
+        width:100%;
+    }
+    .one .logo{
+        width:90px;
+    }
+
+    .intro{
+        width:85%;
+    }
+
+    .main-one .intro h1{
+        font-size:1.5rem;
+        line-height: 2.5rem;
+        margin:2.14rem auto 1rem;
+    }
+
+    .main-one .intro p{
+        font-size:1rem;
+        width:100%;
+    }
+
+
+    .two .main-two{
+        width: 80%;
+        grid-template-areas: "acces"
+                             "security"
+                             "collab"
+                             "file";            
+    }
+
+    .section-one{
+        min-height: 85rem;
+    }
+
+    .acces,.file{
+        width: 100%;
+    }
+    
+    .security,.collab{
+        width: 98%;
+    }
+
+    .main-three{
+        height: 90vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .main-three .productive{
+        width: 100%;
+    }
+
+    .main-three .content-productive{
+        width: 95%;
+    }
+
+    .main-three .content-productive .title{
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .main-three .content-productive .caption-one{
+        font-size: 1rem;
+    }
+
+    .main-three .content-productive .caption-two{
+        font-size: 1rem;
+    }
+
+    .main-three .content-productive .link{
+        font-size: .9rem;
+    }
+
+    .section-two{
+        height:55rem;
+    }
+
+    .main-four{
+        width: 78%;
+        row-gap: 35px;
+    }
+
+    .main-four .quotes{
+        width:20px;
+        height: 20px;
+        top: -15px;
+        left: 5px;
+    }
+
+    .main-four .quotes img{
+        width:100%;
+    }
+
+    .main-four .card .caption{
+        width: auto;
+        font-size: .70rem;
+    }
+
+    .section-three{
+        height: 70rem;
+    }
+
+    .main-five{
+        width: 90%;
+        height: auto;;
+        padding: 50px 25px 10px;
+    }
+
+    .main-five .tittle{
+        font-size: 1.5rem;
+    }
+
+    .main-five .caption{
+        width: 100%;
+    }
+
+    .main-five .email{
+        flex-direction: column;
+        height: 150px
+    }
+
+    .main-five .email input{
+        width:100%;
+    }
+
+    .three{
+        padding-top: 300px;
+        padding-bottom: 25px;
+    }
+
+    .three .footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .5fr 1fr 1fr 1fr 90px;
+    }
+
+    .three .footer .location{
+        width: 85%;
+    }
+
+    .three .footer .contact{
+        grid-area: 3/1/4/2;
+    }
+
+    .three .footer .link-one{
+        justify-self: start;
+        grid-area: 4/1/5/2;
+    }
+
+    .three .footer .link-two{
+        place-self: end start; 
+        grid-area: 5/1/6/2;
+    }
+
+    .three .footer .parent-icons{
+        place-self: end center;
+        grid-area: 6/1/7/2;
+    }
+}
