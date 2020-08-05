@@ -263,7 +263,7 @@ a{
 }
 
 .main-four .card .caption{
-    width: 21rem;
+    width: 105%;
     font-size: 0.96rem;
     margin-bottom: 1.42rem;
     color: hsla(0, 0%, 100%,90%);
